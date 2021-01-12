@@ -1,0 +1,13 @@
+
+.labelColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.labelRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}

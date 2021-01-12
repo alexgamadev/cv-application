@@ -1,0 +1,23 @@
+.sectionCard {
+  display: flex;
+  flex-direction: column;
+
+  width: auto;
+  padding: 10px;
+  margin: 10px;
+  gap: 10px;
+  border: 2px solid #888;
+  box-shadow: 0px 5px 10px black;
+  background-color: #313131;
+}
+
+.sectionTitle {
+  margin: 5px 0px;
+  font-size: 35px;
+  text-decoration: underline;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+}
