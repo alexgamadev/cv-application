@@ -3,19 +3,18 @@ import SectionCard from '../SectionCard';
 import EducationCard from '../EducationCard';
 
 const Education = (props) => {
-  const [eduArr, updateArr] = useState(props.data);
+  const [eduArr, setEduArr] = useState(props.data);
   const [maxLength, setMaxLength] = useState(props.data.length);
 
   const addNewEducation = (e) => {
-    updateArr(prevArr => [...prevArr, {id: maxLength}]);
+    setEduArr(prevArr => [prevArr, {id: maxLength + 1}]);
     setMaxLength(maxLength + 1);
-  };
+  }
 
   const deleteEducation = (e) => {
     const {target} = e;
-
-    updateArr(eduArr.filter(item => item.id != target.id));
-  };
+    setEduArr(eduArr.filter(education => education.id != target.id));
+  }
 
   return (
     <SectionCard title="Education" heading={<button className="btn success" onClick={addNewEducation}>Add New</button>}>

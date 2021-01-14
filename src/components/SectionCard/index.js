@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './SectionCard.module.css'
 
 const SectionCard = (props) => {
-  const { children, title, heading, fontSize } = props;
+  const { children, title, heading} = props;
   return (
     <div className={styles.sectionCard}>
       <div className={styles.heading}>

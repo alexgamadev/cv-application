@@ -1,7 +1,7 @@
 import Resume from '../Resume';
 import styles from './App.module.css';
 
-function App() {
+const App = () => {
   return (
     <div className={styles.app}>
       <header></header>
